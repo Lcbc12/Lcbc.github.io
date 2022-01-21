@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Proof of Retrievability | Lcbc12’s bookmark</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Proof of Retrievability" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Working on PoR: specifically public Compact Proof of Retrievability" />
+<meta property="og:description" content="Working on PoR: specifically public Compact Proof of Retrievability" />
+<link rel="canonical" href="https://lcbc12.github.io//2022/01/21/Proof-of-Retrievability.html" />
+<meta property="og:url" content="https://lcbc12.github.io//2022/01/21/Proof-of-Retrievability.html" />
+<meta property="og:site_name" content="Lcbc12’s bookmark" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-01-21T00:00:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Proof of Retrievability" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://lcbc12.github.io//2022/01/21/Proof-of-Retrievability.html"},"url":"https://lcbc12.github.io//2022/01/21/Proof-of-Retrievability.html","headline":"Proof of Retrievability","dateModified":"2022-01-21T00:00:00+01:00","datePublished":"2022-01-21T00:00:00+01:00","description":"Working on PoR: specifically public Compact Proof of Retrievability","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="/assets/js/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="/assets/css/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup theme-color -->
+<!-- start theme color meta headers -->
+<meta name="theme-color" content="#353535">
+<meta name="msapplication-navbutton-color" content="#353535">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- end theme color meta headers -->
+
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+  <ul>
+    
+      <li><a href="/" >Home</a></li>
+    
+      <li><a href="/blog.html" >Blog</a></li>
+    
+      <li><a href="/about.html" >About</a></li>
+    
+  </ul>
+</nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Lcbc12's bookmark</h1>
+          <p>To keep an eye on my project updates!</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/Lcbc12">Lcbc12</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
+        </div>
+
+        <h1>Proof of Retrievability</h1>
+
+<p>
+  Quick description: Working on PoR: specifically public Compact Proof of Retrievability
+  <br/>
+  Project state: <span class="pending">pending</span>
+  <br/>
+  Link: <a href="https://github.com/Lcbc12/Compact">https://github.com/Lcbc12/Compact</a>
+  <br/>
+</p>
+
+<h2 id="quick-introduction-to-proof-of-retrievability">Quick introduction to Proof of Retrievability</h2>
+
+<p>Because data is becoming more personal and is taking more storage space, it is quite usual now to load a file in Google Drive, OneDrive from Microsoft, etc.</p>
+
+<p>Maybe, some of this data is important for you and you want a way to make sure that data is truly stored.</p>
+
+<p>Unless you want to download entierely this data everyday, there is no solution for you to check if it’s stored.</p>
+
+<p>Or maybe there is in fact one way: Proof of Retrievability.</p>
+
+<p>To sum up, it’s a cryptographic tool enabling a user to mathematically challenge a server to check that its file is still stored.</p>
+
+<p>It works in a five-step protocol involving three parties:</p>
+
+<ul>
+  <li>Client: the one that possesses the file;</li>
+  <li>Server: the one that has a lot of free storage space to rent;</li>
+  <li>Other: other user of the network.</li>
+</ul>
+
+<p>The steps are:</p>
+
+<ol>
+  <li>Initialization: Client generates some metadatas to start the process;</li>
+  <li>Signature: Client signs its original file, making a new signature file. Client sends both files (original and signature) to Server;</li>
+  <li>Challenge: Client sends a challenge to the Server;</li>
+  <li>Proof: Server computes a proof according to the challenge, the original file and the signature file;</li>
+  <li>Verification: Other or Client verify that the proof is correct regarding metadatas and challenge.</li>
+</ol>
+
+<p>That’s it! The proof is way lighter than the file and easy to verify!</p>
+
+<h2 id="work-done">Work done</h2>
+
+<p>With the blockchain emergence, Proof of Retrievability found a place in this system.</p>
+
+<p>Indeed, it just needs a smart contract that handle the verification step and here we go, we have a trusted system and a full protocol to store our file!</p>
+
+<p>That’s why I worked with ISAE Supaéro on it and creates <a href="https://arxiv.org/pdf/2001.07016.pdf">BlockHouse</a>.</p>
+
+<p>I am currently continuing this work with ISAE Supaéro and improving this protocol.</p>
+
+<p>You can find a small part in the Github repository.</p>
+
+<h2 id="versions">Versions</h2>
+
+<h3 id="version-1">Version 1</h3>
+
+<p>Version state: <span class="finished">Finished</span></p>
+
+<p>The main idea is to make the public Compact Proof of Retrievability work.
+You can find it here: <a href="https://link.springer.com/content/pdf/10.1007/978-3-540-89255-7_7.pdf">Compact Proofs of Retrievability</a></p>
+
+<p>The smart contract stores all the require metadatas to verify proof, the challenges and the proofs.</p>
+
+<p>A little test script is implemented to verify the protocol.</p>
+
+<p>To sum up:</p>
+
+<ul>
+  <li>Public Compact Proof of Retrievability protocol in smart contract;</li>
+  <li>Test script to check if it works.</li>
+</ul>
+
+<h3 id="version-2">Version 2</h3>
+
+<p>Version state: <span class="pending">Pending</span></p>
+
+<p>There, I want to share a tool made from <a href="https://github.com/scipr-lab/libff">libff library</a> to make all the steps describe above.</p>
+
+<p>Then, anybody in a blockchain network with this solution will be able to run entirely this protocol.</p>
+
+<p>I want to add benchmark tool in order to optimize the signing step. Indeed, signing a file generates new elements (to store aswell), so the lighter the better, otherwise this solution requires more storage space than at the start.</p>
+
+<p>To sum up:</p>
+
+<ul>
+  <li>C++ tool to sign file, generate challenge, compute proofs and, incidentally, verify the proof;</li>
+  <li>Benchmark tool to optimize the signing step and display the protocol performances.</li>
+</ul>
+
+<h3 id="version-3">Version 3</h3>
+
+<p>Version state: <span class="not_started">Not started yet</span></p>
+
+<p>Once everything is done with the protocol by itself, I want to make a marketplace where any account can propose some storage space, or a file to store with the possibility to check there reliability.</p>
+
+<p>Payment will be made thanks to tokens, not only ether transfers.</p>
+
+<p>I will create a site to display all propositions and a way to make challenges easier.</p>
+
+<p>To sum up:</p>
+
+<ul>
+  <li>Marketplace smart contract handling all PoR protocols;</li>
+  <li>Website that displays the marketplace and facilitate usage of every protocol;</li>
+  <li>Payment by tokens.</li>
+</ul>
+
+
+      </section>
+
+    </div>
+  </body>
+</html>

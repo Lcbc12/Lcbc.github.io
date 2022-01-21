@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Non Fungible Tokens | Lcbc12’s bookmark</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Non Fungible Tokens" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Working on NFT: minting, viewing and transfering" />
+<meta property="og:description" content="Working on NFT: minting, viewing and transfering" />
+<link rel="canonical" href="https://lcbc12.github.io//2022/01/21/Non-Fungible-Tokens.html" />
+<meta property="og:url" content="https://lcbc12.github.io//2022/01/21/Non-Fungible-Tokens.html" />
+<meta property="og:site_name" content="Lcbc12’s bookmark" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-01-21T00:00:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Non Fungible Tokens" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://lcbc12.github.io//2022/01/21/Non-Fungible-Tokens.html"},"url":"https://lcbc12.github.io//2022/01/21/Non-Fungible-Tokens.html","headline":"Non Fungible Tokens","dateModified":"2022-01-21T00:00:00+01:00","datePublished":"2022-01-21T00:00:00+01:00","description":"Working on NFT: minting, viewing and transfering","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="/assets/js/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="/assets/css/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup theme-color -->
+<!-- start theme color meta headers -->
+<meta name="theme-color" content="#353535">
+<meta name="msapplication-navbutton-color" content="#353535">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- end theme color meta headers -->
+
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+  <ul>
+    
+      <li><a href="/" >Home</a></li>
+    
+      <li><a href="/blog.html" >Blog</a></li>
+    
+      <li><a href="/about.html" >About</a></li>
+    
+  </ul>
+</nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Lcbc12's bookmark</h1>
+          <p>To keep an eye on my project updates!</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/Lcbc12">Lcbc12</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
+        </div>
+
+        <h1>Non Fungible Tokens</h1>
+
+<p>
+  Quick description: Working on NFT: minting, viewing and transfering
+  <br/>
+  Project state: <span class="pending">pending</span>
+  <br/>
+  Link: <a href="https://github.com/Lcbc12/NFT">https://github.com/Lcbc12/NFT</a>
+  <br/>
+</p>
+
+<h2 id="why-nft">Why NFT</h2>
+
+<p>Since 2021, NFT are becoming more and more omnipresent, almost every blockchain project deals with them.
+Browsing through them you can find games, tokenomics, art, etc.</p>
+
+<p>With such an emergence, I could not pass by without being interested in it.</p>
+
+<p>This is why I started this project: to train myself on this technology and see the potential to be drawn from it.</p>
+
+<h2 id="versions">Versions</h2>
+
+<p>I imposed a batch of features on myself through versions to be able to deliver a finished and functional product each time.
+So, once a version is finished, I start the features of the next one.</p>
+
+<h2 id="version-1">Version 1</h2>
+
+<p>Version state: <span class="finished">Finished</span></p>
+
+<p>This version was the start of the project, so I wanted to make the very basis about NFT on a blockchain technology that I know well.</p>
+
+<p>For the back-end part, I will use Ganache with Truffle for solidity development.
+For the front-end part, I will use ReactJS, connected to MetaMask to sign every transaction.</p>
+
+<p>Here is the diagram of this solution:
+<img src="https://raw.githubusercontent.com/Lcbc12/NFT/abc6aa8aad6a60519c74a4cea84eb188d905cc41/NFT.svg" alt="NFT Solution diagram" /></p>
+
+<p>The main objective was to make the basics features: mint and view.</p>
+
+<p>Thanks to this solution, anybody can mint a new NFT, store the metadata generated in <a href="&quot;https://nft.storage/&quot;">NFT Storage</a> and saving the metadata URI in the blockchain.</p>
+
+<p>The viewer will then retrieve all the metadata URI from the blockchain, load it and load the image into the site.</p>
+
+<p>To sum up:</p>
+
+<ul>
+  <li>Mint an image, metadata’s URI is stored in the blockchain, metadata is stored in NFT.Storage;</li>
+  <li>View a NFT by recovering the image by doing the reverse process.</li>
+</ul>
+
+<h2 id="version-2">Version 2</h2>
+
+<p>Project state: <span class="not_started">Not started yet</span></p>
+
+<p>For the second version, I want the site to become a marketplace where anybody can sell/buy any NFT she possesses.</p>
+
+<p>I think that I’ll have to work with token economics, not only account.transfer(value) in solidity.</p>
+
+<p>I will try to make the site connect to other cryptowallet and, hence, other blockchain.</p>
+
+<p>To sum up:</p>
+
+<ul>
+  <li>Marketplace to sell/buy NFT with other tokens;</li>
+  <li>Connection to other cryptowallets.</li>
+</ul>
+
+
+      </section>
+
+    </div>
+  </body>
+</html>
