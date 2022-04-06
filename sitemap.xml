@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/2022/01/19/Completing-this-site.html</loc>
-<lastmod>2022-01-19T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/2022/01/19/Creating-this-site.html</loc>
-<lastmod>2022-01-19T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/2022/01/21/Non-Fungible-Tokens.html</loc>
+<loc>https://lcbc12.github.io//2022/01/21/Non-Fungible-Tokens.html</loc>
 <lastmod>2022-01-21T00:00:00+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/2022/01/21/Proof-of-Retrievability.html</loc>
+<loc>https://lcbc12.github.io//2022/01/21/Proof-of-Retrievability.html</loc>
 <lastmod>2022-01-21T00:00:00+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/about.html</loc>
+<loc>https://lcbc12.github.io//about.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/blog.html</loc>
+<loc>https://lcbc12.github.io//blog.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
+<loc>https://lcbc12.github.io//</loc>
 </url>
 </urlset>

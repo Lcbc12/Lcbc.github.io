@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="fr-FR">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,17 +9,17 @@
 <meta name="generator" content="Jekyll v4.2.1" />
 <meta property="og:title" content="Proof of Retrievability" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Working on PoR: specifically public Compact Proof of Retrievability" />
-<meta property="og:description" content="Working on PoR: specifically public Compact Proof of Retrievability" />
-<link rel="canonical" href="http://localhost:4000/2022/01/21/Proof-of-Retrievability.html" />
-<meta property="og:url" content="http://localhost:4000/2022/01/21/Proof-of-Retrievability.html" />
+<meta name="description" content="travaux sur les PoR : particulièrement sur la Public Compact Proof of Retrievability" />
+<meta property="og:description" content="travaux sur les PoR : particulièrement sur la Public Compact Proof of Retrievability" />
+<link rel="canonical" href="https://lcbc12.github.io//2022/01/21/Proof-of-Retrievability.html" />
+<meta property="og:url" content="https://lcbc12.github.io//2022/01/21/Proof-of-Retrievability.html" />
 <meta property="og:site_name" content="Lcbc12’s bookmark" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-01-21T00:00:00+01:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Proof of Retrievability" />
 <script type="application/ld+json">
-{"datePublished":"2022-01-21T00:00:00+01:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2022/01/21/Proof-of-Retrievability.html"},"url":"http://localhost:4000/2022/01/21/Proof-of-Retrievability.html","headline":"Proof of Retrievability","description":"Working on PoR: specifically public Compact Proof of Retrievability","dateModified":"2022-01-21T00:00:00+01:00","@context":"https://schema.org"}</script>
+{"datePublished":"2022-01-21T00:00:00+01:00","description":"travaux sur les PoR : particulièrement sur la Public Compact Proof of Retrievability","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://lcbc12.github.io//2022/01/21/Proof-of-Retrievability.html"},"url":"https://lcbc12.github.io//2022/01/21/Proof-of-Retrievability.html","headline":"Proof of Retrievability","dateModified":"2022-01-21T00:00:00+01:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="stylesheet" href="/assets/css/style.css?v=">
@@ -55,15 +55,11 @@
   <body>
       <div id="header">
         <nav>
-  <ul>
-    
-      <li><a href="/" >Home</a></li>
-    
-      <li><a href="/blog.html" >Blog</a></li>
-    
-      <li><a href="/about.html" >About</a></li>
-    
-  </ul>
+  
+    <a class="btn" href="/" >Accueil</a>
+  
+    <a class="btn" href="/about.html" >À propos de moi</a>
+  
 </nav>
       </div><!-- end header -->
 
@@ -72,118 +68,84 @@
       <section>
         <div id="title">
           <h1>Lcbc12's bookmark</h1>
-          <p>To keep an eye on my project updates!</p>
+          <p>Pour garder un œil sur mes projets ! Et voir les mises à jour du site qui évoluera aussi !</p>
           <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/Lcbc12">Lcbc12</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
+          <span class="credits left">Projet maintenu par <a href="https://github.com/Lcbc12">Lcbc12</a></span>
         </div>
 
         <h1>Proof of Retrievability</h1>
 
 <p>
-  Quick description: Working on PoR: specifically public Compact Proof of Retrievability
+  Description rapide : travaux sur les PoR : particulièrement sur la Public Compact Proof of Retrievability
   <br/>
-  Link: <a href="https://github.com/Lcbc12/Compact">https://github.com/Lcbc12/Compact</a>
+  Lien : <a href="https://github.com/Lcbc12/Compact">https://github.com/Lcbc12/Compact</a>
   <br/>
 </p>
 
-<h2 id="quick-introduction-to-proof-of-retrievability">Quick introduction to Proof of Retrievability</h2>
+<h2 id="rapide-introduction-à-la-proof-of-retrievability">Rapide Introduction à la Proof of Retrievability</h2>
 
-<p>Because data is becoming more personal and is taking more storage space, it is quite usual now to load a file in Google Drive, OneDrive from Microsoft, etc.</p>
+<p>Une Proof of Retrievability (ou PoR) est un moyen cryptographique de vérifier qu’un fichier est toujours stocké sur un serveur distant sans avoir à télécharger le fichier lui-même.
+Ainsi, j’utilise personnellement une méthode dite “publique” de PoR afin que n’importe qui puisse réaliser cette vérification.</p>
 
-<p>Maybe, some of this data is important for you and you want a way to make sure that data is truly stored.</p>
+<h3 id="comment-ça-marche-">Comment ça marche ?</h3>
+<p>Grâce à une étape préalable, celui qui possède le fichier signe son fichier cryptographiquement et génère ainsi un deuxième fichier. Il envoie ses deux fichiers au serveur distant et est ensuite en capacité de lui envoyer des challenges (cryptographiques). Le serveur peut calculer une preuve et l’envoyer au client. N’importe qui disposant du challenge et de la preuve peut, dans la version publique, vérifier cette preuve et avoir la certitude que le fichier est bel et bien stocké.</p>
 
-<p>Unless you want to download entierely this data everyday, there is no solution for you to check if it’s stored.</p>
+<h2 id="travaux-effectués">Travaux effectués</h2>
 
-<p>Or maybe there is in fact one way: Proof of Retrievability.</p>
-
-<p>To sum up, it’s a cryptographic tool enabling a user to mathematically challenge a server to check that its file is still stored.</p>
-
-<p>It works in a five-step protocol involving three parties:</p>
-
-<ul>
-  <li>Client: the one that possesses the file;</li>
-  <li>Server: the one that has a lot of free storage space to rent;</li>
-  <li>Other: other user of the network.</li>
-</ul>
-
-<p>The steps are:</p>
-
-<ol>
-  <li>Initialization: Client generates some metadatas to start the process;</li>
-  <li>Signature: Client signs its original file, making a new signature file. Client sends both files (original and signature) to Server;</li>
-  <li>Challenge: Client sends a challenge to the Server;</li>
-  <li>Proof: Server computes a proof according to the challenge, the original file and the signature file;</li>
-  <li>Verification: Other or Client verify that the proof is correct regarding metadatas and challenge.</li>
-</ol>
-
-<p>That’s it! The proof is way lighter than the file and easy to verify!</p>
-
-<h2 id="work-done">Work done</h2>
-
-<p>With the blockchain emergence, Proof of Retrievability found a place in this system.</p>
-
-<p>Indeed, it just needs a smart contract that handle the verification step and here we go, we have a trusted system and a full protocol to store our file!</p>
-
-<p>That’s why I worked with ISAE Supaéro on it and creates <a href="https://arxiv.org/pdf/2001.07016.pdf">BlockHouse</a>.</p>
-
-<p>I am currently continuing this work with ISAE Supaéro and improving this protocol.</p>
-
-<p>You can find a small part in the Github repository.</p>
+<p>Avec l’émergence de la blockchain, les Proof of Retrievability ont trouvé leur place dans ce système.
+En effet, les smart contract peuvent très bien gérés tout seul l’étape de vérification en ayant à stocker que très peu d’informations.
+Ainsi, les utilisateurs ont trouvé une alternative de stockage aux traditionnels serveur de stockage centralisé.
+C’est pourquoi j’ai travaillé avec l’ISAE Supaéro et co-rédigé <a href="https://arxiv.org/pdf/2001.07016.pdf">BlockHouse</a>.</p>
 
 <h2 id="versions">Versions</h2>
 
 <h3 id="version-1">Version 1</h3>
 
-<p>Version state: <span class="finished">Finished</span></p>
+<p>Etat : <span class="finished">Terminé</span></p>
 
-<p>The main idea is to make the public Compact Proof of Retrievability work.
-You can find it here: <a href="https://link.springer.com/content/pdf/10.1007/978-3-540-89255-7_7.pdf">Compact Proofs of Retrievability</a></p>
+<p>Dans cette première version, j’ai voulu implémenter le protocole publique le plus connu de PoR.
+Vous pourrez en savoir plus grâce à ce PDF : <a href="https://link.springer.com/content/pdf/10.1007/978-3-540-89255-7_7.pdf">Compact Proofs of Retrievability</a></p>
 
-<p>The smart contract stores all the require metadatas to verify proof, the challenges and the proofs.</p>
+<p>J’ai rédigé un script de test afin de vérifier le process de vérification.</p>
 
-<p>A little test script is implemented to verify the protocol.</p>
-
-<p>To sum up:</p>
+<p>Pour résumer :</p>
 
 <ul>
-  <li>Public Compact Proof of Retrievability protocol in smart contract;</li>
-  <li>Test script to check if it works.</li>
+  <li>Le protocole publique de Compact Proofs of Retrievability dans un smart contract;</li>
+  <li>Script de test afin de vérifier s’il fonctionne et faire des benchs.</li>
 </ul>
 
 <h3 id="version-2">Version 2</h3>
 
-<p>Version state: <span class="pending">Pending</span></p>
+<p>Etat : <span class="pending">En cours</span></p>
 
-<p>There, I want to share a tool made from <a href="https://github.com/scipr-lab/libff">libff library</a> to make all the steps describe above.</p>
+<p>Dans cette version, je voulais partager le script C++ utilisé pour réaliser toutes les étapes du process.</p>
 
-<p>Then, anybody in a blockchain network with this solution will be able to run entirely this protocol.</p>
+<p>Je voudrais aussi réaliser un outil de benchmark afin de trouver la meilleure configuration du processus selon le fichier.</p>
 
-<p>I want to add benchmark tool in order to optimize the signing step. Indeed, signing a file generates new elements (to store aswell), so the lighter the better, otherwise this solution requires more storage space than at the start.</p>
-
-<p>To sum up:</p>
+<p>Pour résumer:</p>
 
 <ul>
-  <li>C++ tool to sign file, generate challenge, compute proofs and, incidentally, verify the proof;</li>
-  <li>Benchmark tool to optimize the signing step and display the protocol performances.</li>
+  <li>Un outil C++ pour signer les fichiers, générer des challenges, calculer des preuves et, évidemment, les vérifier;</li>
+  <li>Outil de benchmark pour détecter la meilleure configuration pour le fichier donné.</li>
 </ul>
 
 <h3 id="version-3">Version 3</h3>
 
-<p>Version state: <span class="not_started">Not started yet</span></p>
+<p>Etat : <span class="not_started">Pas encore commencé</span></p>
 
-<p>Once everything is done with the protocol by itself, I want to make a marketplace where any account can propose some storage space, or a file to store with the possibility to check there reliability.</p>
+<p>Une fois tout le reste implémenté, pourquoi pas créer une interface web permettant à n’importe qui de vendre son espace de stockage via un marketplace.</p>
 
-<p>Payment will be made thanks to tokens, not only ether transfers.</p>
+<p>Il utiliserait évidemment les mécanismes des Proof of Retrievability pour assurer le bon fonctionnement du site.</p>
 
-<p>I will create a site to display all propositions and a way to make challenges easier.</p>
+<p>J’utiliserai un paiement par le biais de jeton crypto.</p>
 
-<p>To sum up:</p>
+<p>Pour résumer :</p>
 
 <ul>
-  <li>Marketplace smart contract handling all PoR protocols;</li>
-  <li>Website that displays the marketplace and facilitate usage of every protocol;</li>
-  <li>Payment by tokens.</li>
+  <li>MarketPlace pour acheter/vendre de l’espace de stockage pour un fichier;</li>
+  <li>Une interface web permettant de faciliter l’utilisation de toutes les étapes du protocol;</li>
+  <li>Paiement par le biais de jetons.</li>
 </ul>
 
 
