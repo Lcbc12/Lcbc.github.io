@@ -253,7 +253,7 @@ td, th { padding: 0; }
 
 * { box-sizing: border-box; }
 
-body { padding: 5% 30% 30%; margin: 0; font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #606c71; text-align: justify; }
+body { padding: 2% 30% 30%; margin: 0; font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #606c71; text-align: justify; background-image: url("../images/bg.jpg"); background-repeat: no-repeat; background-color: #eeeeee; }
 
 .finished { color: green; font-weight: bold; }
 
