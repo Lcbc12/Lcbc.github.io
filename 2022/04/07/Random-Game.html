@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Random Game | Lcbc12’s bookmark</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Random Game" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="essai d’un jeu aléatoire type casino" />
+<meta property="og:description" content="essai d’un jeu aléatoire type casino" />
+<link rel="canonical" href="https://lcbc12.github.io//2022/04/07/Random-Game.html" />
+<meta property="og:url" content="https://lcbc12.github.io//2022/04/07/Random-Game.html" />
+<meta property="og:site_name" content="Lcbc12’s bookmark" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-04-07T00:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Random Game" />
+<script type="application/ld+json">
+{"datePublished":"2022-04-07T00:00:00+02:00","description":"essai d’un jeu aléatoire type casino","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://lcbc12.github.io//2022/04/07/Random-Game.html"},"url":"https://lcbc12.github.io//2022/04/07/Random-Game.html","headline":"Random Game","dateModified":"2022-04-07T00:00:00+02:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="/assets/js/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="/assets/css/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup theme-color -->
+<!-- start theme color meta headers -->
+<meta name="theme-color" content="#353535">
+<meta name="msapplication-navbutton-color" content="#353535">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- end theme color meta headers -->
+
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+  
+    <a class="btn" href="/" >Accueil</a>
+  
+    <a class="btn" href="/about.html" >À propos de moi</a>
+  
+</nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Lcbc12's bookmark</h1>
+          <hr>
+          <span class="credits left">Maintenu par <a href="https://github.com/Lcbc12">Lcbc12</a></span>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+        </div>
+
+        <h1>Random Game</h1>
+
+<p>
+  Description rapide : essai d'un jeu aléatoire type casino
+  <br/>
+  Lien : <a href="https://github.com/Lcbc12/Random-Game">https://github.com/Lcbc12/Random-Game</a>
+  <br/>
+</p>
+
+<h2 id="projet">Projet</h2>
+
+<p>La génération aléatoire n’étant pas réellement possible sur la blockchain, j’ai voulu trouver une solution à ce problème en intégrant un serveur nodeJS pour cette génération.</p>
+
+<p>L’idée est simple : l’utilisateur lance un pari sur un nombre entre 0 et 100 sur un site web en espérant gagner, ce pari passe par le serveur qui va, lui aussi, générer un nombre aléatoire entre 0 et 100, puis ce nombre partira sur le smart contract afin de récupérer (ou non) la récompense selon le nombre choisi du client.</p>
+
+<p>La difficulté va être de pouvoir prouver que le calcul du nombre aléatoire (entre 0 et 100) soit légitime.
+Deux méthodes me viennent au moment où j’écris ces lignes : soit simplement en publiant la méthode (attention à une potentielle prédiction de l’utilisateur), soit en faisant appel à des méthodes cryptographiques (plus lourd, mais plus sûr).</p>
+
+<h2 id="version-1">Version 1</h2>
+
+<p>Etat : <span class="not_started">Pas encore commencé</span></p>
+
+<p>Reproduire ce qui a été défini ci-dessus.
+Smart contract : dispose d’un portefeuille via un “owner”, servira à récupérer/transmettre l’argent
+Serveur node : en plus de récupérer/envoyer des requêtes au site, il aura une fonction de génération de nombres aléatoires
+Client web : propose de faire un pari sur un nombre</p>
+
+<p>## Version 2</p>
+
+<p>Etat : <span class="not_started">Pas encore commencé</span></p>
+
+<p>Pourquoi ne pas faire un jeu plus élaboré comme un loto en ligne avec une combinaison de chiffres à choisir par plusieurs participants et le(s) gagnant(s) récupère(nt) une partie de l’argent mis en jeu.</p>
+
+
+      </section>
+
+    </div>
+  </body>
+</html>
